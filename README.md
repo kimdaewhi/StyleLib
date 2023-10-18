@@ -1,6 +1,6 @@
 # React Style 라이브러리 실습
 
-1. Styled-Components
+## 1. Styled-Components
   * javascript 방식으로 스타일 지정 및 컴포넌트 생성.
   * 키워드
     + `&` : 자기 자신을 의미
