@@ -8,3 +8,4 @@
     + `&.className` : className을 먹인 친구에게 스타일 먹이기
     + `.className &` : className을 먹인 기본 component 내부의 자기 자신 태그
     + `& ~ &` : 태그 옆에 있는 태그에게 스타일 부여.
+  * 새로운 컴포넌트 생성 및 컴포넌트를 상속 및 확장하여 사용 가능.(StyledComponentsExam3.jsx 참고)

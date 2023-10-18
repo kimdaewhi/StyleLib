@@ -1,10 +1,10 @@
 import './App.css';
-import StyledComponentsExam2 from './components/StyledComponents/StyledComponentsExam2'
+import StyledComponentsExam3 from './components/StyledComponents/StyledComponentsExam3'
 
 function App() {
   return (
     <div className="App">
-      <StyledComponentsExam2/>
+      <StyledComponentsExam3/>
       {/*
         <StyledComponentsExam1/>
         <StyledComponentsExam2/>
