@@ -1,14 +1,15 @@
 import './App.css';
-import StyledComponentsExam4 from './components/StyledComponents/StyledComponentsExam4'
+import EmotionExam1 from './components/Emotion/EmotionExam1'
 
 function App() {
   return (
     <div className="App">
-      <StyledComponentsExam4/>
+      <EmotionExam1/>
       {/*
         <StyledComponentsExam1/>
         <StyledComponentsExam2/>
         <StyledComponentsExam3/>
+        <StyledComponentsExam4/>
         <StyledComponentsExam4/>
        */}
     </div>
