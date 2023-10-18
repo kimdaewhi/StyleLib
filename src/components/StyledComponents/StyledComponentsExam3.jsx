@@ -48,8 +48,8 @@ export default function StyledComponentsExam3() {
             <PasswordInput placeholder="A bigger password input" $size="2em" />
 
             <hr/>
-            
-            <Rotate>&lt; 💅🏾 &gt;</Rotate>
+
+            <Rotate>&lt;💅🏾 &gt;</Rotate>
         </div>
 
 
