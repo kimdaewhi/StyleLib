@@ -1,5 +1,6 @@
 import React from 'react'
 import styled, { keyframes } from 'styled-components'
+import logo from '../../logo.svg';
 
 const Input = styled.input.attrs(props => ({
         type: 'text',
@@ -33,10 +34,16 @@ const rotate = keyframes`
 // Here we create a component that will rotate everything we pass in over two seconds
 const Rotate = styled.div`
     display: inline-block;
-    animation: ${rotate} 2s linear infinite;
+    animation: ${rotate} 0.8s linear infinite;
     padding: 2rem 1rem;
     font-size: 1.2rem;
 `;
+
+const RotateLogo = styled.img`
+    display: inline-block;
+    width: 50%;
+    animation: ${rotate} 2.2s linear infinite;
+`
 
 
 export default function StyledComponentsExam3() {
@@ -50,6 +57,10 @@ export default function StyledComponentsExam3() {
             <hr/>
 
             <Rotate>&lt;💅🏾 &gt;</Rotate>
+
+            <hr/>
+
+            <RotateLogo src={logo} alt="logo" />
         </div>
 
 
