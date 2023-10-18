@@ -3,7 +3,6 @@ import styled from 'styled-components'
 
 const Thing = styled.div.attrs((/* props */) => ({ tabIndex: 0 }))`
     color: blue;
-
     &:hover {
         color: red; // <Thing> when hovered
     }
@@ -35,7 +34,6 @@ export default function StyledComponentsExam2() {
             <div>Pretty nice day today.</div>
 
             <Thing>Don't you think?</Thing>
-
             <div className="something-else">
                 <Thing>Splendid.</Thing>
             </div>
