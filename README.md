@@ -24,8 +24,8 @@
   - Emotion은 **객체 형식의 스타일을 사용하는 접근 방식과 css 템플릿 리터럴을 사용하는 두 가지 방식을 모두 지원함.**
 * **@emotion css 에러 발생 시 해결방법**
   - Error message : **You have tried to stringify object returned from 'css' function. It isn't supposed to be used directly (e.g. as value of the 'className' prop), but rather handed to emotion so it can handle it (e.g. as value of 'css' prop).**
-  - emotion/css를 사용할 때 css에 전달하는 객체가 문자열로 변환해서 전달되야 하는데 그대로 전달되서 발생하는 문제...
-  - 이를 해결하기 위해서 babel 설정이 필요한데, 설정이 안되어 있을 가능성이 크다. json 설정 파일에 다음 내용을 추가하자.
+  - emotion/css를 사용할 때 css에 전달하는 객체가 문자열로 변환되서 전달되야 하는데 그대로 전달되서 발생하는 문제...
+  - 이를 해결하기 위해서 babel 설정이 필요한데, 설정이 안되어 있을 가능성이 크다. json 설정 파일에 다음 내용을 추가하자.(craco 패키지를 이용해서 babel 설정 변경 가능)
     ```json
     {
       "presets": [
@@ -38,3 +38,9 @@
     }
     ```
   - 또는 간단히 해결하고 싶을 때는 최상단에 ```/** @jsxImportSource @emotion/react */``` 를 추가하자
+
+  - @emotion/babel-plugin
+    ```node.js
+    // babel-plugin 설치
+    npm install --save-dev @emotion/babel-plugin
+    ```
